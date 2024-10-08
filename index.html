@@ -7,11 +7,144 @@
     <title>Pet House</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+<style>
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+</style>
 
-<body>
+<body class="lg:mx-24 lg:my-8">
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl"><span><img src="images/logo.webp" alt=""></span>Peddy</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a
+                    class="p-3 cursor-pointer active:scale-95 duration-20000 rounded-full border text-gray-400 border-gray-400"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto">
+        <section class="text-center mt-20">
+            <p class="text-gray-600 font-semibold text-xl">Bring families Together</p>
+            <p class="lg:text-6xl font-semibold max-w-[45rem] mx-auto my-4">Your path to Adoption Starts here</p>
+            <p class="max-w-[45rem] text-gray-500 font-semibold mx-auto">Find your perfect companion. Explore our pet
+                adoption website to give a loving home to dogs and cats</p>
+            <button class="btn bg-[#0E7A81] text-white my-3">View More</button>
+            <img class="mx-auto" src="images/pet.webp" alt="">
+        </section>
+        <section class="mt-20">
+            <p class="text-center text-3xl font-semibold">Adopt your Best Friend</p>
+            <p class="max-w-[45rem] my-3 text-center mx-auto">It is a long established fact that a reader will be
+                distracted
+                by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            <div id="petSelector" class="flex mt-10 lg:justify-between">
+                <!-- <button><span><img src="" alt=""></span></button> -->
+            </div>
+        </section>
+        <section class="mt-14">
+            <div class="flex justify-between items-center my-5">
+                <p class="text-xl font-semibold">Best Deal for you</p>
+                <button class="btn bg-[#0E7A81] text-white">Sort by Price</button>
+            </div>
+            <div class="grid gap-3 grid-cols-1 lg:grid-cols-4">
+                <div id="petShower"
+                    class="grid relative col-span-3 grid-cols-1 gap-3 lg:grid-cols-3 lg:h-[33rem] overflow-y-scroll">
+                    <!-- for pet display inner html -->
 
-    
+
+
+                    <!-- <div class="card border border-gray-300 bg-base-100 w- shadow-xl">
+                        <figure class="px-5 pt-5">
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Shoe</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <div class="card-actions flex justify-between">
+                                <button class="p-3 active:scale-95 duration-100 border border-gray-300 rounded-lg"><svg
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z" />
+                                    </svg>
+
+                                </button>
+                                <button class="btn border bg-transparent text-[#0E7A81] border-gray-300">Adopt</button>
+                                <button
+                                    class="btn border bg-transparent text-[#0E7A81] border-gray-300">Details</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div id="likedImageDisplay"
+                    class="col-span-1 grid grid-cols-2 grid-rows-4 gap-2 overflow-y-scroll lg:h-[33rem] rounded-lg border border-gray-300">
+                    <!-- for linked images inner html -->
+
+
+
+                    <!-- <div class="grid grid-cols-2 p-3 gap-3">
+                        <img class="rounded-lg" src="https://i.ibb.co.com/p0w744T/pet-1.jpg" alt="">
+                    </div> -->
+
+                    <!-- for no display inner html -->
+
+                    <!-- <div class="flex justify-center items-center flex-col ">
+                        <img class="mx-auto" src="images/error.webp" alt="">
+                        <p class="text-center text-3xl font-semibold">No Information available</p>
+                        <p class="text-gray-400">It is a long established fact that a reader will be distracted by the
+                            readable content of a
+                            page when looking at
+                            its layout. The point of using Lorem Ipsum is that it has a.</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
