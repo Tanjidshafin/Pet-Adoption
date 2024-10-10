@@ -11,4 +11,3 @@ const items = [
 ];
 console.log(items.sort((a,b)=>a.price-b.price));
 
- 
