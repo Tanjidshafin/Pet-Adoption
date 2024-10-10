@@ -42,10 +42,7 @@ const blankEditor = () => {
     <div class="flex justify-center items-center flex-col ">
                     <img class="mx-auto" src="images/error.webp" alt="">
                     <p class="text-center my-7 text-3xl font-semibold">No Information available</p>
-                    <p class="text-gray-400 text-center max-w-[55rem]">It is a long established fact that a reader will be distracted by the
-                        readable content of a
-                        page when looking at
-                        its layout. The point of using Lorem Ipsum is that it has a.</p>
+                    <p class="text-gray-400 text-center max-w-[55rem]">Alas! No Information Till Now. Try Again later.</p>
                 </div> 
     `
 }
@@ -68,7 +65,7 @@ const petByCategory = (name) => {
         document.getElementById("spinner").style.display = "none"
         document.getElementById("petShower").classList.remove("flex")
         document.getElementById("petShower").classList.add("grid")
-    }, 3000)
+    }, 2000)
 
 
 
@@ -249,7 +246,7 @@ sortPrice.addEventListener("click", () => {
         document.getElementById("petShower").classList.remove("flex")
         document.getElementById("petShower").classList.add("grid")
 
-    }, 3000)
+    }, 2000)
 })
 function sortedCard(pets) {
     let sortedArr = pets.sort((a, b) => b.price - a.price)
