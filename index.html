@@ -1,98 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet House</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
-<style>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <style>
     * {
-        font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
-</style>
+  </style>
 
-<body>
+  <body>
     <div class="lg:mx-24 mx-3 lg:my-8">
-        <nav class="container mx-auto">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Home</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-3xl"><span><img src="images/logo.webp" alt=""></span>Peddy</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
-                        <li><a>Shop</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
-                    <a
-                        class="p-3 cursor-pointer active:scale-95 duration-20000 rounded-full border text-gray-400 border-gray-400"><svg
-                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                        </svg>
-                    </a>
-                </div>
+      <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>Contact</a></li>
+              </ul>
             </div>
-        </nav>
-        <div class="container mx-auto">
-            <section class="text-center mt-20">
-                <p class="text-gray-600 font-semibold text-xl">Bring families Together</p>
-                <p class="lg:text-6xl font-semibold max-w-[45rem] mx-auto my-4">Your path to Adoption Starts here</p>
-                <p class="max-w-[45rem] px-4 text-gray-500 font-semibold mx-auto">Find your perfect companion. Explore
-                    our
-                    pet
-                    adoption website to give a loving home to dogs and cats</p>
-                <a href="#btnClicked" class="btn bg-[#0E7A81] text-white my-3">View More</a>
-                <img class="mx-auto" src="images/pet.webp" alt="">
-            </section>
-            <section class="mt-20">
-                <p class="text-center text-3xl font-semibold">Adopt your Best Friend</p>
-                <p class="max-w-[45rem] my-3 text-center mx-auto">Adopting a pet can be one of the most rewarding
-                    decisions you’ll ever make. When you bring home a new furry friend, you're not only gaining a loyal
-                    companion, but you’re also giving an animal a second chance at a happy life.</p>
-                <div id="petSelector" class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 mt-10">
-                    <!-- <button><span><img src="" alt=""></span></button> -->
-                </div>
-            </section>
-            <section class="mt-14 mx-2">
-                <div id="btnClicked" class="flex justify-between items-center my-5">
-                    <p class="text-xl font-semibold">Best Deal for you</p>
-                    <button id="sortPrice" class="btn bg-[#0E7A81] text-white">Sort by Price</button>
-                </div>
-                <div class="grid gap-3 my-10 grid-cols-1 lg:grid-cols-4">
-                    <div id="petShower"
-                        class="grid justify-center items-center col-span-3 grid-cols-1 md:grid-cols-2 gap-3 lg:grid-cols-3 lg:h-[32.5rem] overflow-y-scroll">
-                        <!-- for pet display inner html -->
-                        <!-- <span class="loading absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 loading-dots loading-lg"></span> -->
+            <a class="btn btn-ghost text-3xl"
+              ><span><img src="images/logo.webp" alt="" /></span>Peddy</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="p-3 cursor-pointer active:scale-95 duration-20000 rounded-full border text-gray-400 border-gray-400"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container mx-auto">
+        <section class="text-center mt-20">
+          <p class="text-gray-600 font-semibold text-xl">Bring families Together</p>
+          <p class="lg:text-6xl font-semibold max-w-[45rem] mx-auto my-4">Your path to Adoption Starts here</p>
+          <p class="max-w-[45rem] px-4 text-gray-500 font-semibold mx-auto">
+            Find your perfect companion. Explore our pet adoption website to give a loving home to dogs and cats
+          </p>
+          <a href="#btnClicked" class="btn bg-[#0E7A81] text-white my-3">View More</a>
+          <img class="mx-auto" src="images/pet.webp" alt="" />
+        </section>
+        <section class="mt-20">
+          <p class="text-center text-3xl font-semibold">Adopt your Best Friend</p>
+          <p class="max-w-[45rem] my-3 text-center mx-auto">
+            Adopting a pet can be one of the most rewarding decisions you’ll ever make. When you bring home a new furry
+            friend, you're not only gaining a loyal companion, but you’re also giving an animal a second chance at a
+            happy life.
+          </p>
+          <div id="petSelector" class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-4 mt-10">
+            <!-- <button><span><img src="" alt=""></span></button> -->
+          </div>
+        </section>
+        <section class="mt-14 mx-2">
+          <div id="btnClicked" class="flex justify-between items-center my-5">
+            <p class="text-xl font-semibold">Best Deal for you</p>
+            <button id="sortPrice" class="btn bg-[#0E7A81] text-white">Sort by Price</button>
+          </div>
+          <div class="grid gap-3 my-10 grid-cols-1 lg:grid-cols-4">
+            <div
+              id="petShower"
+              class="grid justify-center items-center col-span-3 grid-cols-1 md:grid-cols-2 gap-3 lg:grid-cols-3 h-full overflow-y-scroll">
+              <!-- for pet display inner html -->
+              <!-- <span class="loading absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 loading-dots loading-lg"></span> -->
 
-
-                        <!-- <div class="card border border-gray-300 bg-base-100 w- shadow-xl">
+              <!-- <div class="card border border-gray-300 bg-base-100 w- shadow-xl">
                             <figure class="px-5 pt-5">
                                 <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                                     alt="Shoes" class="rounded-xl" />
@@ -118,21 +129,19 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div>
-                    <div id="likedImageDisplay"
-                        class="col-span-1 my-10 lg:my-0 w-full grid grid-cols-2 grid-rows-4 gap-2 overflow-y-scroll lg:h-[33rem] rounded-lg border border-gray-300">
+            </div>
+            <div
+              id="likedImageDisplay"
+              class="col-span-1 my-10 lg:my-0 w-full grid grid-cols-2 grid-rows-4 gap-2 overflow-y-scroll lg:h-[33rem] rounded-lg border border-gray-300">
+              <!-- for linked images inner html -->
 
-                        <!-- for linked images inner html -->
-
-
-
-                        <!-- <div class="grid grid-cols-2 p-3 gap-3">
+              <!-- <div class="grid grid-cols-2 p-3 gap-3">
                             <img class="rounded-lg" src="https://i.ibb.co.com/p0w744T/pet-1.jpg" alt="">
                         </div> -->
 
-                        <!-- for no display inner html -->
+              <!-- for no display inner html -->
 
-                        <!-- <div class="flex justify-center items-center flex-col ">
+              <!-- <div class="flex justify-center items-center flex-col ">
                             <img class="mx-auto" src="images/error.webp" alt="">
                             <p class="text-center text-3xl font-semibold">No Information available</p>
                             <p class="text-gray-400">It is a long established fact that a reader will be distracted by the
@@ -140,14 +149,12 @@
                                 page when looking at
                                 its layout. The point of using Lorem Ipsum is that it has a.</p>
                         </div> -->
-                    </div>
-                </div>
-            </section>
-            <!-- modal details -->
+            </div>
+          </div>
+        </section>
+        <!-- modal details -->
 
-
-
-            <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                 <div class="modal-box">
                     <div>
                         <div><img class="w-full" src="" alt=""></div>
@@ -163,62 +170,59 @@
                 </div>
             </dialog> -->
 
-            <!-- adopted modal -->
-            <!-- Open the modal using ID.showModal() method -->
+        <!-- adopted modal -->
+        <!-- Open the modal using ID.showModal() method -->
 
-            <dialog id="adopted_modal_5" class="modal modal-bottom sm:modal-middle">
-                <div class="modal-box">
-                    <h3 class="text-2xl text-center font-bold">Congrats</h3>
-                    <p class="py-4 text-center">Pet has been Adopted.</p>
-                    <p class="py-4 text-center">Closing in...</p>
-                    <p id="countdown" class="text-center text-6xl font-semibold">3</p>
-
-                </div>
-            </dialog>
-        </div>
+        <dialog id="adopted_modal_5" class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <h3 class="text-2xl text-center font-bold">Congrats</h3>
+            <p class="py-4 text-center">Pet has been Adopted.</p>
+            <p class="py-4 text-center">Closing in...</p>
+            <p id="countdown" class="text-center text-6xl font-semibold">3</p>
+          </div>
+        </dialog>
+      </div>
     </div>
 
     <!-- footer -->
     <footer class="bg-[#131313]">
-        <div class="container px-3 py-8 lg:px-24 lg:py-8 mx-auto">
-            <div class="footer flex flex-col md:flex-row lg:flex-row text-base-content">
-                <nav class="basis-[33%] text-white">
-                    <a class="btn btn-ghost text-white text-3xl"><span><img src="images/logo.webp"
-                                alt=""></span>Peddy</a>
-                    <a class="text-gray-500 link link-hover">Openings Hours: 24/7 per days</a>
-                    <a class="text-gray-500 link link-hover">Emails: tanjidshafin1234@gmail.com</a>
-                    <a class="text-gray-500 link link-hover">Phones: 01234567890</a>
-                    <a class="text-gray-500 link link-hover">Locations: Feni, Bangladesh</a>
-                    <div class="flex flex-row gap-3"><a href=""><img class="w-10 h-10 object-cover rounded-md"
-                                src="images/fb.png" alt=""></a><a href=""><img class="w-10 h-10 object-cover rounded-md"
-                                src="images/x.png" alt=""></a><a href=""><img class="w-10 h-10 object-cover rounded-md"
-                                src="images/instagram.webp" alt=""></a><a href=""><img
-                                class="w-10 h-10 object-cover rounded-md" src="images/youtube.png" alt=""></a></div>
-                </nav>
-                <nav class="basis-[33%] justify-center">
-                    <h6 class="footer-title text-white">Useful Links</h6>
-                    <a class="text-gray-500 link link-hover">About us</a>
-                    <a class="text-gray-500 link link-hover">Contact</a>
-                    <a class="text-gray-500 link link-hover">Jobs</a>
-                    <a class="text-gray-500 link link-hover">Press kit</a>
-                </nav>
-                <form class="basis-[30%]">
-                    <h6 class="footer-title text-white">Drop a Message</h6>
-                    <fieldset class="form-control w-80">
-
-                        <div class="join flex flex-col gap-4">
-                            <input type="text" placeholder="username@site.com"
-                                class="input input-bordered rounded-lg" />
-                            <button class="btn text-white rounded-lg btn-primary ">Subscribe</button>
-                        </div>
-                    </fieldset>
-                </form>
+      <div class="container px-3 py-8 lg:px-24 lg:py-8 mx-auto">
+        <div class="footer flex flex-col md:flex-row lg:flex-row text-base-content">
+          <nav class="basis-[33%] text-white">
+            <a class="btn btn-ghost text-white text-3xl"
+              ><span><img src="images/logo.webp" alt="" /></span>Peddy</a
+            >
+            <a class="text-gray-500 link link-hover">Openings Hours: 24/7 per days</a>
+            <a class="text-gray-500 link link-hover">Emails: tanjidshafin1234@gmail.com</a>
+            <a class="text-gray-500 link link-hover">Phones: 01234567890</a>
+            <a class="text-gray-500 link link-hover">Locations: Feni, Bangladesh</a>
+            <div class="flex flex-row gap-3">
+              <a href=""><img class="w-10 h-10 object-cover rounded-md" src="images/fb.png" alt="" /></a
+              ><a href=""><img class="w-10 h-10 object-cover rounded-md" src="images/x.png" alt="" /></a
+              ><a href=""><img class="w-10 h-10 object-cover rounded-md" src="images/instagram.webp" alt="" /></a
+              ><a href=""><img class="w-10 h-10 object-cover rounded-md" src="images/youtube.png" alt="" /></a>
             </div>
+          </nav>
+          <nav class="basis-[33%] justify-center">
+            <h6 class="footer-title text-white">Useful Links</h6>
+            <a class="text-gray-500 link link-hover">About us</a>
+            <a class="text-gray-500 link link-hover">Contact</a>
+            <a class="text-gray-500 link link-hover">Jobs</a>
+            <a class="text-gray-500 link link-hover">Press kit</a>
+          </nav>
+          <form class="basis-[30%]">
+            <h6 class="footer-title text-white">Drop a Message</h6>
+            <fieldset class="form-control w-80">
+              <div class="join flex flex-col gap-4">
+                <input type="text" placeholder="username@site.com" class="input input-bordered rounded-lg" />
+                <button class="btn text-white rounded-lg btn-primary">Subscribe</button>
+              </div>
+            </fieldset>
+          </form>
         </div>
+      </div>
     </footer>
 
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
