@@ -1,7 +1,3 @@
-Got it! Here’s your updated, polished README, written as if **PetHouse** is your personal project — no mention of courses or assignments. Clean, professional, and ready for GitHub or a portfolio. Let me know if you'd like to add badges, images, or contribution guidelines too.
-
----
-
 # 🏠 PetHouse
 
 **Live Site:** [https://safinpethouse.netlify.app/](https://safinpethouse.netlify.app/)
